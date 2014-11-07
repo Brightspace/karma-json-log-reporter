@@ -8,6 +8,10 @@
     "type": "git",
     "url": "A simple Karma reporter for logging json messages from matchers and specs."
   },
+  "dependencies": {
+    "fs": "0.0.2",
+    "object-merge": "^2.5.1"
+  },
   "keywords": [
     "d2l",
     "json",
