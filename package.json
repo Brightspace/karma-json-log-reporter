@@ -6,7 +6,7 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "A simple Karma reporter for logging json messages from matchers and specs."
+    "url": "https://github.com/Brightspace/valence-ui-karma-json-log-reporter.git"
   },
   "dependencies": {
     "fs": "0.0.2",
