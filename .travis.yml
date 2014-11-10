@@ -1,3 +1,11 @@
 language: node_js
 node_js:
 - '0.10'
+deploy:
+  provider: npm
+  email: d2ltravisdeploy@d2l.com
+  api_key:
+    secure: MapUnlY+wNOmEaGcrDvuCQQdTXI88AdWdFCH6yXbwBVX+ZjDXO1qti+r79SAqFjWzQZRlHxBz6zwlML6be8jpdDWCQhc2c5n4NrUNAvjaC4xY5zsun+WnDFLR2lAOuNEQ3VjuzgHu82LAYhfDEM6GgbZ2cxJlOZ8qBPkPopXoHY=
+  on:
+    tags: true
+    repo: Brightspace/valence-ui-karma-json-log-reporter
