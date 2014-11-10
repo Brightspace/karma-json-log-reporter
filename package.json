@@ -1,0 +1,22 @@
+{
+  "name": "vui-karma-json-log-reporter",
+  "description": "A simple Karma reporter for logging json messages from matchers and specs.",
+  "version": "0.0.0",
+  "author": "D2L Corporation",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Brightspace/valence-ui-karma-json-log-reporter.git"
+  },
+  "dependencies": {
+    "fs": "0.0.2",
+    "object-merge": "^2.5.1"
+  },
+  "keywords": [
+    "d2l",
+    "json",
+    "karma-reporter",
+    "valence-ui",
+    "vui"
+  ]
+}
