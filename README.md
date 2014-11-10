@@ -1,4 +1,4 @@
-# vui-karma-json-log-reporter
+# vui-karma-json-log-reporter [![Build Status](https://travis-ci.org/Brightspace/valence-ui-karma-json-log-reporter.svg?branch=master)](https://travis-ci.org/Brightspace/valence-ui-karma-json-log-reporter)
 
 A simple Karma reporter for logging json messages from matchers and specs.
 
