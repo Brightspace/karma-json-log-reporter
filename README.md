@@ -33,7 +33,7 @@ window.dump( JSON.stringify( obj ) );
 console.log( JSON.stringify( obj ) );
 ```
 
-Alternatively, if an object is provided with a name and object, the message is sent to a file named according the the key value.
+Alternatively, if an object is provided with a name and object, the object is logged to a file according to the specified name, ex. 'myObjectName.json'.
 
 ```javascript
 var obj = {
