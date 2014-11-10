@@ -20,25 +20,25 @@ var jsonLogReporter = function( config ) {
 			return;
 		}
 
-		var key = ( log.key !== undefined ) ? log.key : 'logFile_' + currentTime;
+		var name = ( log.name !== undefined ) ? log.name : 'logFile_' + currentTime;
 
-		var message = ( log.message !== undefined ) ? log.message : log;
+		var object = ( log.object !== undefined ) ? log.object : log;
 
 		var fs = require( 'fs' );
 
-		var existingMessage = fs.readFileSync(
-				path + key + ".json",
+		var existingObject = fs.readFileSync(
+				path + name + ".json",
 				{ "flag": "a+"}
 			);
 
-		if ( existingMessage && existingMessage.length !== 0 ) {
+		if ( existingObject && existingObject.length !== 0 ) {
 			try {
 
-				existingMessage = JSON.parse( existingMessage.toString() );
+				existingObject = JSON.parse( existingObject.toString() );
 
 				var objectMerge = require( 'object-merge' );
 
-				message = objectMerge( existingMessage, message );
+				object = objectMerge( existingObject, object );
 
 			} catch (e) {
 				return;
@@ -46,8 +46,8 @@ var jsonLogReporter = function( config ) {
 		}
 
 		fs.writeFileSync(
-				path + key + ".json",
-				JSON.stringify( message, null, " " )
+				path + name + ".json",
+				JSON.stringify( object, null, " " )
 			);
 
 	};
