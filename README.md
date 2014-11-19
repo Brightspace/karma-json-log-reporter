@@ -1,4 +1,6 @@
-# vui-karma-json-log-reporter [![Build Status](https://travis-ci.org/Brightspace/valence-ui-karma-json-log-reporter.svg?branch=master)](https://travis-ci.org/Brightspace/valence-ui-karma-json-log-reporter)
+# vui-karma-json-log-reporter
+[![NPM version][npm-image]][npm-url]
+[![Build status][ci-image]][ci-url]
 
 A simple Karma reporter for logging json messages from matchers and specs.
 
@@ -46,8 +48,9 @@ window.dump( JSON.stringify( obj ) );
 
 **Note**: if the target file exists with an object, the new object is merged with the existing object and the existing file is updated.
 
-## Contributing
 
-### Code Style
 
-This repository is configured with [EditorConfig](http://editorconfig.org) rules and contributions should make use of them. See the valence-ui [Code Style wiki page](https://github.com/Brightspace/valence-ui-helpers/wiki/Code-Style) for details.
+[npm-url]: https://www.npmjs.org/package/valence-ui-karma-json-log-reporter
+[npm-image]: https://badge.fury.io/js/valence-ui-karma-json-log-reporter.png
+[ci-image]: https://travis-ci.org/Brightspace/valence-ui-karma-json-log-reporter.svg?branch=master
+[ci-url]: https://travis-ci.org/Brightspace/valence-ui-karma-json-log-reporter
