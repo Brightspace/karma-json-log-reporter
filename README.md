@@ -50,7 +50,7 @@ window.dump( JSON.stringify( obj ) );
 
 
 
-[npm-url]: https://www.npmjs.org/package/valence-ui-karma-json-log-reporter
-[npm-image]: https://badge.fury.io/js/valence-ui-karma-json-log-reporter.png
+[npm-url]: https://www.npmjs.org/package/vui-karma-json-log-reporter
+[npm-image]: https://badge.fury.io/js/vui-karma-json-log-reporter.png
 [ci-image]: https://travis-ci.org/Brightspace/valence-ui-karma-json-log-reporter.svg?branch=master
 [ci-url]: https://travis-ci.org/Brightspace/valence-ui-karma-json-log-reporter
