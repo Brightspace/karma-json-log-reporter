@@ -1,4 +1,4 @@
-# vui-karma-json-log-reporter
+# karma-json-log-reporter
 [![NPM version][npm-image]][npm-url]
 [![Build status][ci-image]][ci-url]
 
@@ -8,7 +8,7 @@ A simple Karma reporter for logging json messages from matchers and specs.
 
 Install from NPM:
 ```shell
-npm install vui-karma-json-log-reporter
+npm install karma-json-log-reporter
 ```
 
 ## Usage
@@ -21,7 +21,7 @@ Required Karma configuration includes typical wire-up via Karma plug-ins and rep
 		"outputPath": "test/some/path/"
 	},
 	"plugins": [
-		"vui-karma-json-log-reporter"
+		"karma-json-log-reporter"
 	],
 	"reporters": ["json-log"]
 }
@@ -50,7 +50,7 @@ window.dump( JSON.stringify( obj ) );
 
 
 
-[npm-url]: https://www.npmjs.org/package/vui-karma-json-log-reporter
-[npm-image]: https://badge.fury.io/js/vui-karma-json-log-reporter.png
+[npm-url]: https://www.npmjs.org/package/karma-json-log-reporter
+[npm-image]: https://badge.fury.io/js/karma-json-log-reporter.png
 [ci-image]: https://travis-ci.org/Brightspace/karma-json-log-reporter.svg?branch=master
 [ci-url]: https://travis-ci.org/Brightspace/karma-json-log-reporter
