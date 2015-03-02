@@ -9,4 +9,3 @@ deploy:
   on:
     tags: true
     all_branches: true
-    repo: Brightspace/valence-ui-karma-json-log-reporter
