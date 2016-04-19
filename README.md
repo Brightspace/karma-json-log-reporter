@@ -48,7 +48,15 @@ window.dump( JSON.stringify( obj ) );
 
 **Note**: if the target file exists with an object, the new object is merged with the existing object and the existing file is updated.
 
+To overwrite, add to Karma configuration:
 
+```javascript
+{
+	"jsonLogReporter": {
+		"overwrite": true
+	}
+}
+```
 
 [npm-url]: https://www.npmjs.org/package/karma-json-log-reporter
 [npm-image]: https://badge.fury.io/js/karma-json-log-reporter.png
