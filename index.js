@@ -3,6 +3,7 @@
 var jsonLogReporter = function( config ) {
 
 	var path = config['outputPath'] ? config['outputPath'] : '';
+	var overwrite = config['overWrite'] ? true : false;
 	var currentTime = new Date().getTime();
 
 	this.onBrowserLog = function( browser, log, type ) {
@@ -26,22 +27,24 @@ var jsonLogReporter = function( config ) {
 
 		var fs = require( 'fs' );
 
-		var existingObject = fs.readFileSync(
-				path + name + ".json",
-				{ "flag": "a+"}
-			);
+		if ( !overwrite ) {
+			var existingObject = fs.readFileSync(
+					path + name + ".json",
+					{ "flag": "a+"}
+				);
 
-		if ( existingObject && existingObject.length !== 0 ) {
-			try {
+			if ( existingObject && existingObject.length !== 0 ) {
+				try {
 
-				existingObject = JSON.parse( existingObject.toString() );
+					existingObject = JSON.parse( existingObject.toString() );
 
-				var objectMerge = require( 'object-merge' );
+					var objectMerge = require( 'object-merge' );
 
-				object = objectMerge( existingObject, object );
+					object = objectMerge( existingObject, object );
 
-			} catch (e) {
-				return;
+				} catch (e) {
+					return;
+				}
 			}
 		}
 
